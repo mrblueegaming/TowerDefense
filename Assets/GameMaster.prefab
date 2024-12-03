@@ -1,0 +1,126 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2808881975580216786
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2808881975580216796}
+  - component: {fileID: 2808881975580216787}
+  - component: {fileID: 2808881975580216797}
+  - component: {fileID: 2808881975580216798}
+  - component: {fileID: 2808881975580216799}
+  - component: {fileID: 2808881975580216792}
+  m_Layer: 0
+  m_Name: GameMaster
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2808881975580216796
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2808881975580216786}
+  m_LocalRotation: {x: -0, y: -0, z: -0.000000014901161, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2808881975580216787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2808881975580216786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38726be9536e7404fb34551a7a8e35cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waves:
+  - enemies:
+    - enemyPrefab: {fileID: 2503422791512125959, guid: 82664a3ac9a608945b61b0e5b47cc57a,
+        type: 3}
+      maxCount: 5
+    - enemyPrefab: {fileID: 5926284857527078826, guid: 12f074f7a1278c148947bbe76428807f,
+        type: 3}
+      maxCount: 5
+    rate: 1
+    totalCount: 10
+  spawnPoint: {fileID: 0}
+  timeBetweenWaves: 0
+  waveCountdownText: {fileID: 0}
+  manager: {fileID: 2808881975580216799}
+--- !u!114 &2808881975580216797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2808881975580216786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1567d97272abf8f40a7924b035d7bc17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeUI: {fileID: 0}
+  buildEffect: {fileID: 6987845308299511498, guid: 91fea196a6670154a9133c5aefc0e7a6,
+    type: 3}
+  sellEffect: {fileID: 6164587318017993843, guid: 0061c7dcf386276419d24b1b3e7b5e55,
+    type: 3}
+--- !u!114 &2808881975580216798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2808881975580216786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a460620481f31bd4988646f1451f1837, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startMoney: 15000
+  startHealth: 500
+--- !u!114 &2808881975580216799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2808881975580216786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e9aa52f5afb8ff41a1fb8d46b69407d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameOverUI: {fileID: 0}
+  shopUI: {fileID: 0}
+  completeLevelUI: {fileID: 0}
+--- !u!114 &2808881975580216792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2808881975580216786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c13aa65edb7d8c046be7ea14619c2f4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ui: {fileID: 0}
+  shop: {fileID: 0}
+  options: {fileID: 0}
+  sceneFader: {fileID: 0}
+  menuSceneName: MainMenu
